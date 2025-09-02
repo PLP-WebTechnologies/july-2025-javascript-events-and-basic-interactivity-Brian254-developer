@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Event Handling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropdown">
+    <button onclick="toggleDropdown()" class="dropbtn">Menu</button>
+    <div id="dropdownContent" class="dropdown-content">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </div><br>
+    <button id="accessBtn">Learn More here</button>
+    <div id="description" style="background-color: rgb(167, 127, 127); color: antiquewhite;"></div>
+    <input type="text" id="inputField" placeholder="Type something...">
+    <button id="ToggleTheme">black theme</button>
+    <h3>Contacts</h3>
+
+
+<form id="signupForm" novalidate>
+  <label>Name:</label>
+  <input type="text" id="name" />
+  <span class="error" id="nameError"></span><br>
+
+  <label>Email:</label>
+  <input type="email" id="email" />
+  <span class="error" id="emailError"></span><br>
+
+  <label>Password:</label>
+  <input type="password" id="password" />
+  <span class="error" id="passwordError"></span><br>
+
+  <button type="submit">Sign Up</button>
+  <span class="success" id="successMessage"></span><br>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
